@@ -1,0 +1,9 @@
+<mvc:View controllerName="sap.raj.routingwithid.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <List id="_list" items="{path: '/d/results/'}" >
+            <StandardListItem id="_stdlts" title="{ProductName}" type="Navigation" description="{QuantityPerUnit}" icon="sap-icon://cart-approval" press=".onClickItem" />
+        </List>
+    </Page>
+</mvc:View>

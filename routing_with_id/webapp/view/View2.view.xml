@@ -1,0 +1,12 @@
+<mvc:View controllerName="sap.raj.routingwithid.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>title}">
+        <content>
+            <Button id="Button" text="{ProductName}"></Button>
+            <Label id="_lb1" text="{ProductName}"></Label>
+            <Label id="_lb2" text="{QuantityPerUnit}"></Label>
+            <Label id="_lb3" text="{Discontinued}"></Label>
+        </content>
+    </Page>
+</mvc:View>

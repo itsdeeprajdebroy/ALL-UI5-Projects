@@ -1,0 +1,7 @@
+<mvc:View controllerName="sap.pp.routinglearning.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="Hello">
+        <Button id="_button_1" text="Back" press=".goToPrevPage"></Button>
+    </Page>
+</mvc:View>
