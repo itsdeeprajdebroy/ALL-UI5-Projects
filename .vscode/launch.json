@@ -55,164 +55,164 @@
       }
     },
     {
-        "name": "Start rough",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/rough",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--open",
-            "test/flpSandbox.html#rough-display"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "DEBUG": "--inspect",
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
-        }
+      "name": "Start rough",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/rough",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#rough-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
+      }
     },
     {
-        "name": "Start rough Local",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/rough",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-local.yaml",
-            "--open",
-            "test/flpSandbox.html#rough-display"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
-        }
+      "name": "Start rough Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/rough",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#rough-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
+      }
     },
     {
-        "name": "Start rough Mock",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/rough",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-mock.yaml",
-            "--open",
-            "test/flpSandbox.html#rough-display"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
-        }
+      "name": "Start rough Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/rough",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#rough-display"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
+      }
     },
     {
-        "name": "Start rough",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/rough",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--open",
-            "test/flpSandbox.html#rough-tile"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "DEBUG": "--inspect",
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
-        }
+      "name": "Start rough",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/rough",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#rough-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
+      }
     },
     {
-        "name": "Start rough Local",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/rough",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-local.yaml",
-            "--open",
-            "test/flpSandbox.html#rough-tile"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
-        }
+      "name": "Start rough Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/rough",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#rough-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
+      }
     },
     {
-        "name": "Start rough Mock",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/rough",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-mock.yaml",
-            "--open",
-            "test/flpSandbox.html#rough-tile"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
-        }
+      "name": "Start rough Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/rough",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#rough-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/rough\"}"
+      }
     }
   ]
 }

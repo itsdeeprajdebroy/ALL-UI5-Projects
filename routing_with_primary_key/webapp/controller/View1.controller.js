@@ -5,6 +5,13 @@ sap.ui.define([
 
     return Controller.extend("sap.rr.routingwithprimarykey.controller.View1", {
         onInit() {
+        },
+
+        onClickItem: function(oEvent) {
+            const productId = oEvent.getSource().getBindingContext().getProperty().ProductID;
+            this.getOwnerComponent().getRouter().navTo("Products", {
+                productID: productId
+            });
         }
     });
 });
