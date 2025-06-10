@@ -10,20 +10,28 @@ sap.ui.define([
 
         _onPatternMatch: function(oEvent) {
             const sId = oEvent.getParameter("arguments").productID;
-            const oView = this.getView()
+            // const oView = this.getView()
 
             const sPath = '/Products(' + sId + ')'
             this.getView().bindElement({
                 path: sPath,
-                event: {
-                    dataRequested: function() {
-                        oView.setBusy(true)
-                    },
+                // event: {
+                //     dataRequested: function() {
+                //         oView.setBusy(true)
+                //     },
                     
-                    dataReceived: function() {
-                        oView.setBusy(false)
-                    }
-                }
+                //     dataReceived: function() {
+                //         oView.setBusy(false)
+                //     }
+                // }
+            })
+        },
+
+        onClickButton: function(oEvent) {
+            const productID = oEvent.getSource().getBindingContext().getProperty("ProductID");
+
+            this.getOwnerComponent().getRouter().navTo("detail", {
+                productID: productID
             })
         }
     });

@@ -99,6 +99,13 @@
           "target": [
             "TargetProducts"
           ]
+        },
+        {
+          "name": "detail",
+          "pattern": "Products/{productID}/detail:?query:",
+          "target": [
+            "TargetDetailedProducts"
+          ]
         }
       ],
       "targets": {
@@ -109,6 +116,10 @@
         "TargetProducts": {
           "id": "Products",
           "name": "Products"
+        },
+        "TargetDetailedProducts": {
+          "id": "DetailedProduct",
+          "name": "DetailedProduct"
         }
       }
     },

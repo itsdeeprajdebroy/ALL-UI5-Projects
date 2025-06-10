@@ -1,0 +1,26 @@
+<mvc:View controllerName="sap.rr.routingwithprimarykey.controller.DetailedProduct"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <IconTabBar
+		id="idIconTabBarNoIcons"
+		class="sapUiResponsiveContentPadding"
+		selectedKey="{Datatabselect>/selectedTabKey}"
+		select=".onTabSelect">
+		<items>
+			<IconTabFilter id="_IDGenIconTabFilter" text="Overview" key="overview">
+				<Text id="_IDGenText" text="{ProductName}" />
+                <Text id="_IDGenText_1" text="{QuantityPerUnit}" />
+			</IconTabFilter>
+			<IconTabFilter id="_IDGenIconTabFilter1" text="Detail" key="detail">
+				<Text id="_IDGenText2" text="{ProductName}" />
+			</IconTabFilter>
+			<IconTabFilter id="_IDGenIconTabFilter2" text="Price" key="price">
+				<Text id="_IDGenText3" text="{UnitPrice}" />
+                <Text id="_IDGenText_3" text="{UnitsInStock}" />
+			</IconTabFilter>
+			<IconTabFilter id="_IDGenIconTabFilter3" text="Partner" key="partner">
+				<Text id="_IDGenText4" text="{SupplierID}" />
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+</mvc:View>

@@ -3,7 +3,7 @@
     xmlns="sap.m">
     <Page id="page2" title="{i18n>info}">
         <content>
-            <Button id="Button" text="{ProductName}"></Button>
+            <Button id="Button" text="{ProductName}" press=".onClickButton"></Button>
             <Label id="_lb1" text="{ProductName}"></Label>
             <Label id="_lb2" text="{QuantityPerUnit}"></Label>
             <Label id="_lb3" text="{Discontinued}"></Label>
