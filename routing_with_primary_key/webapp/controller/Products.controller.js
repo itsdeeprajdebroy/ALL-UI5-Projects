@@ -10,10 +10,20 @@ sap.ui.define([
 
         _onPatternMatch: function(oEvent) {
             const sId = oEvent.getParameter("arguments").productID;
+            const oView = this.getView()
 
             const sPath = '/Products(' + sId + ')'
             this.getView().bindElement({
-                path: sPath
+                path: sPath,
+                event: {
+                    dataRequested: function() {
+                        oView.setBusy(true)
+                    },
+                    
+                    dataReceived: function() {
+                        oView.setBusy(false)
+                    }
+                }
             })
         }
     });

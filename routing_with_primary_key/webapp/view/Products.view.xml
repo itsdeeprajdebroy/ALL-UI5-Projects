@@ -1,7 +1,7 @@
 <mvc:View controllerName="sap.rr.routingwithprimarykey.controller.Products"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <Page id="page2" title="{i18n>title}">
+    <Page id="page2" title="{i18n>info}">
         <content>
             <Button id="Button" text="{ProductName}"></Button>
             <Label id="_lb1" text="{ProductName}"></Label>
