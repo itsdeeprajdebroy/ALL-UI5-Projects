@@ -1,12 +1,78 @@
 <mvc:View controllerName="sap.rr.routingwithprimarykey.controller.Products"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
     xmlns="sap.m">
     <Page id="page2" title="{i18n>info}">
         <content>
-            <Button id="Button" text="{ProductName}" press=".onClickButton"></Button>
+            <!-- <Button id="Button" text="{ProductName}" press=".onClickButton"></Button>
             <Label id="_lb1" text="{ProductName}"></Label>
             <Label id="_lb2" text="{QuantityPerUnit}"></Label>
-            <Label id="_lb3" text="{Discontinued}"></Label>
+            <Label id="_lb3" text="{Discontinued}"></Label> -->
+
+            <VBox id="_IDGenVBox1" class="sapUiSmallMargin" justifyContent="Center">
+            
+            <!-- Header Section -->
+            <ObjectHeader
+                id="productHeader"
+                title="{ProductName}"
+                number="{QuantityPerUnit}"
+                numberUnit="USD"
+                intro="Product Overview"
+                icon="sap-icon://product"
+                showTitleSelector="false"
+                responsive="true"
+            />
+
+            <!-- Form Section -->
+            <f:SimpleForm
+                id="productForm"
+                editable="false"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="4"
+                labelSpanL="4"
+                labelSpanM="12"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="0"
+                emptySpanL="0"
+                emptySpanM="0"
+                emptySpanS="0"
+                columnsXL="2"
+                columnsL="2"
+                columnsM="1"
+                singleContainerFullSize="false">
+
+                <Label id="lblProductID" text="Product ID"/>
+                <Text id="txtProductID" text="{ProductID}"/>
+
+                <Label id="lblQuantityPerUnit" text="Quantity Per Unit"/>
+                <Text id="txtQuantityPerUnit" text="{QuantityPerUnit}"/>
+
+                <Label id="lblUnitsInStock" text="Units In Stock"/>
+                <Text id="txtUnitsInStock" text="{UnitsInStock}"/>
+
+                <Label id="lblUnitsOnOrder" text="Units On Order"/>
+                <Text id="txtUnitsOnOrder" text="{UnitsOnOrder}"/>
+
+                <Label id="lblReorderLevel" text="Reorder Level"/>
+                <Text id="txtReorderLevel" text="{ReorderLevel}"/>
+
+                <Label id="lblDiscontinued" text="Discontinued"/>
+                <Text id="txtDiscontinued" text="{= ${Discontinued} ? 'Yes' : 'No' }"/>
+
+            </f:SimpleForm>
+
+            <!-- Back Button -->
+            <Button
+                id="btnBackToList"
+                icon="sap-icon://open-command-field"
+                text="Next Page"
+                press="onClickButton"
+                class="sapUiMediumMarginTop"
+                type="Emphasized"
+            />
+
+            </VBox>
         </content>
     </Page>
 </mvc:View>

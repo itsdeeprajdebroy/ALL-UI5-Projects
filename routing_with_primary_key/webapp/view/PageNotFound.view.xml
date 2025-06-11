@@ -1,0 +1,37 @@
+<mvc:View xmlns:core="sap.ui.core"
+    controllerName="sap.rr.routingwithprimarykey.controller.PageNotFound"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+>
+ <Page id="_IDGenPage1" showHeader="false" backgroundDesign="List">
+    <VBox id="_IDGenVBox"
+      justifyContent="Center"
+      alignItems="Center"
+      class="sapUiSmallMargin sapUiResponsiveMargin"
+      height="100%">
+      
+      <!-- 404 Illustration -->
+      <!-- <Image id="_IDGenImage"
+        src="https://cdn-icons-png.flaticon.com/512/2748/2748558.png"
+        width="150px"
+        alt="404 Not Found"
+        class="sapUiSmallMarginBottom" /> -->
+
+      <core:Icon id="_IDGenIcon" src="sap-icon://detail-view" size="100px" color="green" height="150px"></core:Icon>
+        
+      <!-- Title -->
+      <Title id="_IDGenTitle" text="Oops! Page Not Found" level="H1" titleStyle="H1" />
+      
+      <!-- Subtext -->
+      <Text id="_IDGenText1" text="The page you are looking for doesn’t exist or has been moved." class="sapUiTinyMarginBottom" />
+      
+      <!-- Button to go Home -->
+      <Button id="_IDGenButton"
+        text="Go to Home"
+        type="Emphasized"
+        icon="sap-icon://home"
+        press="onNavBack"
+        class="sapUiMediumMarginTop" />
+    </VBox>
+  </Page>
+</mvc:View>

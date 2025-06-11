@@ -8,8 +8,7 @@
 		select=".onTabSelect">
 		<items>
 			<IconTabFilter id="_IDGenIconTabFilter" text="Overview" key="overview">
-				<Text id="_IDGenText" text="{ProductName}" />
-                <Text id="_IDGenText_1" text="{QuantityPerUnit}" />
+			
 			</IconTabFilter>
 			<IconTabFilter id="_IDGenIconTabFilter1" text="Detail" key="detail">
 				<Text id="_IDGenText2" text="{ProductName}" />

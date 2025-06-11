@@ -24,6 +24,7 @@ sap.ui.define([
           })
 
           if(sQuery !== undefined){
+            this.lazyLoading(sQuery.tab);
             this.getView().getModel("Datatabselect").setProperty("/selectedTabKey", sQuery?.tab);
           }else{
             this.getOwnerComponent().getRouter().navTo("detail", {
@@ -46,6 +47,23 @@ sap.ui.define([
               tab: key
             }
         })
+        },
+
+        lazyLoading: function(key) {
+          
+          switch(key){
+            case "overview" :
+              this.getOwnerComponent().getRouter().getTargets().display("TargetOverview");
+              break;
+            case "price" :
+              break;
+            case "detail" :
+              break;
+            case "partner" :
+              break;
+            default :
+              return
+          }
         }
     });
   });

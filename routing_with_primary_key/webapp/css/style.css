@@ -1,1 +1,8 @@
 /* Enter your custom styles here */
+.productCardStyle {
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+  }

@@ -106,6 +106,13 @@
           "target": [
             "TargetDetailedProducts"
           ]
+        },
+        {
+          "name": "NotFound",
+          "pattern": ":all*:",
+          "target": [
+            "TargetNotFound"
+          ]
         }
       ],
       "targets": {
@@ -120,6 +127,18 @@
         "TargetDetailedProducts": {
           "id": "DetailedProduct",
           "name": "DetailedProduct"
+        },
+        "TargetNotFound": {
+          "id": "PageNotFound",
+          "name": "PageNotFound"
+        },
+        "TargetOverview": {
+          "parent": "TargetDetailedProducts",
+          "viewId": "Overview",
+          "viewPath": "sap.rr.routingwithprimarykey.view",
+          "viewName": "Overview",
+          "controlId": "_IDGenIconTabFilter",
+          "controlAggregation": "content"
         }
       }
     },

@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <VBox id="_IDGenVBox3" class="sapUiSmallMargin" alignItems="Center" justifyContent="Center">
+
+      <!-- Product Summary Card -->
+      <VBox
+        id="productCard"
+        class="sapUiResponsiveMargin sapUiContentPadding productCardStyle"
+        width="100%">
+
+        <!-- Header -->
+        <ObjectHeader
+          id="productHeadernew"
+          title="{ProductName}"
+          intro="Product Name"
+          icon="sap-icon://product"
+          titleActive="false"
+          responsive="true"
+        />
+
+        <!-- Detail Rows -->
+        <HBox id="_IDGenHBox" alignItems="Center" class="sapUiTinyMarginBottom">
+          <Label id="labelQty" text="Quantity Per Unit:" width="50%" />
+          <Text id="textQty" text="{QuantityPerUnit}" width="50%" />
+        </HBox>
+
+      </VBox>
+
+    </VBox>
+</mvc:View>
