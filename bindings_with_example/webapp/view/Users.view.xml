@@ -1,0 +1,16 @@
+<mvc:View controllerName="sap.ro.application.bindingswithexample.controller.Users"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>userList}">
+    <!-- Agregattion binding -->
+        <List id="_IDGenList"
+		items="{path: 'UserModel>/'}" >
+		    <StandardListItem id="_IDGenStandardListItem"
+                type="Navigation"
+                title="{UserModel>name}"
+                description="{UserModel>email}"
+                icon="{= ${UserModel>postId} > 3 ? 'sap-icon://sys-enter-2' : 'sap-icon://decline'}"
+                press=".onClickNext"/>
+	    </List>
+    </Page>
+</mvc:View>

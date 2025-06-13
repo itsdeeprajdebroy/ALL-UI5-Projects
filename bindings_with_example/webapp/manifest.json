@@ -1,0 +1,109 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "sap.ro.application.bindingswithexample",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.0",
+      "toolsId": "d56fb743-2214-4661-ab8f-9a1d6d48c39c"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.136.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "sap.ro.application.bindingswithexample.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "sap.ro.application.bindingswithexample.view",
+        "async": true,
+        "viewPath": "sap.ro.application.bindingswithexample.view"
+      },
+      "routes": [
+        {
+          "name": "Users",
+          "pattern": "",
+          "target": [
+            "TargetUser"
+          ]
+        },
+        {
+          "name": "Rough",
+          "pattern": "comments/{id}",
+          "target": [
+            "TargetRough"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetUser": {
+          "id": "Users",
+          "name": "Users"
+        },
+        "TargetRough": {
+          "id": "Rough",
+          "name": "Rough"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "sap.ro.application.bindingswithexample.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}
