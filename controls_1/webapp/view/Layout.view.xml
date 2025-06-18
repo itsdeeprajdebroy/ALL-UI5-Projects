@@ -1,0 +1,28 @@
+<mvc:View controllerName="sap.co.controls1.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Page id="_IDGenPage" title="Layout">
+        <l:HorizontalLayout id="_IDGenHorizontalLayout" class="sapUiContentPadding">
+            <!-- <Text id="_IDGenText" text="Hello"/>
+            <Text id="_IDGenText1" text="Hello mr Deepraj" />
+            <Text id="_IDGenText2" text="Hello Jii" /> -->
+            <Image id="_IDGenImage1"
+			src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg"
+			densityAware="true"
+			width="100px">
+		</Image>
+		<Image id="_IDGenImage2"
+			src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg"
+			densityAware="true"
+			width="10em">
+		</Image>
+		<Image id="_IDGenImage3"
+			src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg"
+			densityAware="true"
+			width="20rem">
+		</Image>
+        </l:HorizontalLayout>
+    </Page>
+</mvc:View>
