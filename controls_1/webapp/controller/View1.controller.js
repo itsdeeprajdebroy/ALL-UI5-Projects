@@ -30,6 +30,24 @@ sap.ui.define([
 
         onPressDetailBack: function(oEvent) {
             this.byId("_IDGenSplitApp").backDetail()
+        },
+
+        // tool page
+        onSideNavButtonPress: function() {
+            const exp = this.byId("_IDGenSideNavigation1").getExpanded();
+            this.byId("_IDGenSideNavigation1").setExpanded(!exp)
+        },
+
+        onItemPress: function(oEvent) {
+            
+            this.oRouter = this.getOwnerComponent().getRouter();
+            const sKey = oEvent.getParameter("item").getKey();
+
+            if(sKey === "VBox"){
+                this.oRouter.getTargets().display("TargetVBox")
+            }
+                
         }
+
     });
 });

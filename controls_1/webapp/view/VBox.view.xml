@@ -1,0 +1,74 @@
+<mvc:View
+id="VBox" 
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m">
+    <Page id="_IDGenPage1">
+        <ScrollContainer id="_IDGenScrollContainer" height="100vh">
+        <VBox id="_IDGenVBox">
+            <items>
+            <!-- Hbox 1 start -->
+                <HBox id="_IDGenHBox1" >
+                    <items>
+                        <GenericTile id="_IDGenGenericTile1" 
+                            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                            header="Country-Specific Profit Margin"
+                            subheader="Subtitle"
+                            wrappingType="Normal">
+                            <TileContent id="_IDGenTileContent">
+                                <ImageContent id="_IDGenImageContent" src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg" />
+                            </TileContent>
+	                    </GenericTile>
+                        <GenericTile id="_IDGenGenericTile2" 
+                            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                            header="Country-Specific Profit Margin"
+                            subheader="Subtitle"
+                            wrappingType="Normal">
+                            <TileContent id="_IDGenTileContent2">
+                                <ImageContent id="_IDGenImageContent2" src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg" />
+                            </TileContent>
+	                    </GenericTile>
+                        <GenericTile id="_IDGenGenericTile3" 
+                            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                            header="Country-Specific Profit Margin"
+                            subheader="Subtitle"
+                            wrappingType="Normal">
+                            <TileContent id="_IDGenTileContent3">
+                                <ImageContent id="_IDGenImageContent3" src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg" />
+                            </TileContent>
+	                    </GenericTile>
+                    </items>
+                </HBox>
+                <!-- Hbox 2 starts -->
+                <HBox id="_IDGenHBox2" >
+                  <items>
+                    <GenericTile id="_IDGenGenericTile12" 
+                            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                            header="Country-Specific Profit Margin"
+                            subheader="Subtitle">
+                            <TileContent id="_IDGenTileContent22">
+                                <ImageContent id="_IDGenImageContent23" src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg" />
+                            </TileContent>
+	                    </GenericTile>
+                        <GenericTile id="_IDGenGenericTile22" 
+                            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                            header="Country-Specific Profit Margin"
+                            subheader="Subtitle">
+                            <TileContent id="_IDGenTileContent23">
+                                <ImageContent id="_IDGenImageContent5" src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg" />
+                            </TileContent>
+	                    </GenericTile>
+                        <GenericTile id="_IDGenGenericTile7" 
+                            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+                            header="Country-Specific Profit Margin"
+                            subheader="Subtitle">
+                            <TileContent id="_IDGenTileContent8">
+                                <ImageContent id="_IDGenImageContent9" src="https://sapui5.hana.ondemand.com/test-resources/sap/ui/documentation/sdk/images/HT-7777-large.jpg" />
+                            </TileContent>
+	                    </GenericTile>
+                    </items>
+                </HBox>
+            </items>
+        </VBox>
+        </ScrollContainer>
+    </Page>
+</mvc:View>

@@ -51,6 +51,10 @@
         "settings": {
           "bundleName": "sap.co.controls1.i18n.i18n"
         }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/data.json"
       }
     },
     "resources": {
@@ -83,8 +87,16 @@
       ],
       "targets": {
         "TargetView1": {
-          "id": "Layout",
-          "name": "Layout"
+          "id": "_IDGenView1",
+          "name": "Toolpage"
+        },
+        "TargetVBox": {
+          "parent": "TargetView1",
+          "viewId": "VBox",
+          "viewPath": "sap.co.controls1.view",
+          "viewName": "VBox",
+          "controlId": "pageContainer",
+          "controlAggregation": "pages"
         }
       }
     },
