@@ -1,7 +1,7 @@
-
+<mvc:View 
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
-    <SplitApp id="_IDGenSplitApp"><mvc:View controllerName="sap.co.controls1.controller.View1"
+    <SplitApp id="_IDGenSplitApp">
         <masterPages>
             <Page id="pageMaster1" title="Master 1">
                 <Button id="_IDGenButton1" text="Go to Master page2" press=".onPressNavToMaster2" />

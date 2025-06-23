@@ -1,8 +1,9 @@
 <mvc:View id="_IDGenView1" controllerName="sap.co.controls1.controller.View1"
 xmlns:mvc="sap.ui.core.mvc"
 xmlns="sap.m"
-xmlns:tnt="sap.tnt">
-    <tnt:ToolPage id="toolPage">
+xmlns:tnt="sap.tnt"
+xmlns:l="sap.ui.layout">
+    <!-- <tnt:ToolPage id="toolPage">
         <tnt:header>
 			<tnt:ToolHeader id="_IDGenToolHeader1">
 				<Button
@@ -99,5 +100,38 @@ xmlns:tnt="sap.tnt">
 		<tnt:mainContents>
 			<NavContainer id="pageContainer" />
 		</tnt:mainContents>
-    </tnt:ToolPage>
+    </tnt:ToolPage> -->
+	<VBox id="_IDGenVBox2" class="sapUiSmallMargin">
+    <l:Grid id="_IDGenGrid"
+      defaultSpan="L6 M6 S12"
+      width="100%"
+      hSpacing="2"
+      vSpacing="1">
+
+      <!-- Master Section (List of items) -->
+        <VBox id="_IDGenVBox3">
+          <Title id="_IDGenTitle" text="Product List" level="H2"/>
+          <List id="productList" items="{son>/products}" 
+                mode="SingleSelectMaster"
+                selectionChange="onSelectItem">
+            <StandardListItem id="_IDGenStandardListItem" title="{son>name}" description="{son>category}" />
+          </List>
+        </VBox>
+
+        <!-- Detail Section -->
+        <VBox id="_IDGenVBox4">
+          <Title id="_IDGenTitle1" text="Product Details" level="H2"/>
+          <VBox id="detailSection" visible="{= !!${son>/selectedProduct/name} }">
+            <Label id="_IDGenLabel" text="Name:" />
+            <Text id="_IDGenText" text="{son>/selectedProduct/name}" />
+
+            <Label id="_IDGenLabel1" text="Category:" />
+            <Text id="_IDGenText1" text="{son>/selectedProduct/category}" />
+
+            <Label id="_IDGenLabel2" text="Price:" />
+            <Text id="_IDGenText2" text="{son>/selectedProduct/price}" />
+          </VBox>
+        </VBox>
+    </l:Grid>
+  </VBox>
 </mvc:View>
