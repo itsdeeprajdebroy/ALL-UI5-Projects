@@ -1,0 +1,10 @@
+<mvc:View 
+controllerName="sap.co.controls1.controller.Form"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m">
+    <Page 
+        id="_IDGenPage3" 
+        title="{i18n>Form}">
+        
+    </Page>
+</mvc:View>

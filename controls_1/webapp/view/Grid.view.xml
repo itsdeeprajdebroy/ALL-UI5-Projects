@@ -1,0 +1,48 @@
+<mvc:View id="_IDGen" 
+controllerName="sap.co.controls1.controller.Grid"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:l="sap.ui.layout">
+<Page 
+id="_IDGenPage2" 
+title="{i18n>title}">
+    <l:Grid 
+    id="_IDGenGrid3" 
+    defaultSpan="L6 M6 S12" 
+    hSpacing="1" 
+    vSpacing="1">
+  
+        <!-- First Item -->
+        <Image 
+            id="_IDGenButton" 
+            visible="true" 
+            src="https://bit.ly/3HTcCI0" 
+            height="200px" 
+            width="200px">
+            <layoutData>
+                <l:GridData 
+                id="_IDGenGridData" 
+                span="L3 M6 S12" />
+            </layoutData>
+        </Image>
+
+        <!-- Second Item -->
+        <Text 
+        id="_IDGenInput" 
+        text="George Washington George Washington was the first President of the United States, 
+        the commander-in-chief of the Continental Army during the American Revolutionary War, 
+        and one of the Founding Fathers of the United States.">
+            <layoutData>
+                <l:GridData 
+                id="_IDGenGridData1" 
+                span="L9 M6 S12" />
+            </layoutData>
+        </Text>
+
+    </l:Grid>
+    <Button 
+    id="_IDGenButton5" 
+    text="Hide Image" 
+    press=".onClick"></Button>
+</Page>
+</mvc:View>

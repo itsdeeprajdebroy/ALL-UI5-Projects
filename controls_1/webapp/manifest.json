@@ -87,8 +87,8 @@
       ],
       "targets": {
         "TargetView1": {
-          "id": "_IDGenView1",
-          "name": "Toolpage"
+          "id": "Form",
+          "name": "Form"
         },
         "TargetVBox": {
           "parent": "TargetView1",
